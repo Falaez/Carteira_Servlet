@@ -13,7 +13,32 @@
 	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
 	crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
+	<form action="<c:url value="/transacoes"/>" method="POST">
+		<div>
+			<label for="ticker">Ticker</label> 
+			<input id="ticker" class="form-control" name="ticker">
+		</div>
+		<div>
+			<label for="data">Data</label> 
+			<input id="data" class="form-control" name="data">
+		</div>
+		<div>
+			<label for="preco">Preço</label> 
+			<input id="preco" class="form-control" name="preco">
+		</div>
+		<div>
+			<label for="quantidade">quantidade</label> 
+			<input id="quantidade" class="form-control" name="quantidade">
+		</div>
+		<div>
+			<label for="tipo">Tipo</label> 
+			<input id="tipo" class="form-control" name="tipo">
+		</div>
+		
+		<input type="submit" value="gravar" class="mt-2 btn-primary">
+	</form>
+
 	<h1 class="text-center">Lista de transacoes</h1>
 	<table class="table table-hover table-striped table-bordered">
 		<thead>
